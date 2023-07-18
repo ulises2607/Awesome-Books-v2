@@ -3,20 +3,21 @@ import { addBook } from './modules/addBook.js';
 import { removeBook } from './modules/removeBooks.js';
 import { pages } from './modules/pages.js';
 import { BookStorage } from './modules/managing-books.js';
+
 const pageLinks = document.querySelectorAll('.link-page');
 const sections = document.querySelectorAll('section');
 
-
-export const storage = new BookStorage();
+const storage = new BookStorage();
+export default storage;
 storage.loadData();
 
 // Managing books
-addBook();
-removeBook();
+addBook(storage);
+removeBook(storage);
 
 // pages
 
-pages(sections,pageLinks);
+pages(sections, pageLinks);
 
 // Date
 const dateTime = () => {

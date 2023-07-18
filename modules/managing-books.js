@@ -54,9 +54,4 @@ export class BookStorage {
     }
 }
 
-
-
-
-
-
-
+export default BookStorage;
