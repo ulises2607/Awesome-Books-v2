@@ -1,7 +1,6 @@
-const form = document.querySelector('.add-form');
 const bookList = document.querySelector('.book-list');
 
-class BookStorage {
+export class BookStorage {
     data = [];
 
     addData(book) {
@@ -55,27 +54,9 @@ class BookStorage {
     }
 }
 
-const storage = new BookStorage();
-storage.loadData();
 
-export const addBook = () => {
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const title = document.querySelector('#title');
-    const author = document.querySelector('#author');
 
-    storage.createBook(title.value, author.value);
-    storage.displayData();
-  });
-};
 
-export const removeBook = () => {
-  bookList.addEventListener('click', (event) => {
-    if (event.target.classList.contains('delete')) {
-      const id = parseInt(event.target.dataset.id, 10);
-      storage.removeData(id);
-    }
-  });
-};
 
-window.onload = storage.displayData();
+
+
