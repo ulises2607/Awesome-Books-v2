@@ -18,6 +18,7 @@
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Test](#test)
+  - [Usage](#usage)
 - [👥 Authors](#authors)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
@@ -104,6 +105,10 @@ npx stylelint "**/*.{css,scss}"
 JavaScript Checker:
 npx eslint .
 ```
+
+### Usage
+
+To run the project, execute the following command: -Double click the index.html file.
 
 #### Note
 

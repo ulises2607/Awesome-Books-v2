@@ -1,10 +1,111 @@
-@import url('modules/Styles/config.css');
-@import url('modules/Styles/header.css');
-@import url('modules/Styles/book-list.css');
-@import url('modules/Styles/add-book.css');
-@import url('modules/Styles/contact.css');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: nose;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: kalam, monospace;
+}
+
+body {
+  margin: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+.page-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.page-list a {
+  color: black;
+}
+
+.page-list a:hover {
+  color: red;
+}
 
 .date {
   display: flex;
   justify-content: flex-end;
 }
+
+.books {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list-title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+.list-item:nth-child(odd) {
+  background-color: #eee;
+}
+
+.title-container {
+  display: flex;
+  gap: 0.4rem;
+}
+
+.add-book {
+  margin: 1rem;
+  padding: 1rem 4rem 1rem 4rem;
+}
+
+.add-book h2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: center;
+  width: 5rem;
+  align-self: flex-end;
+}
+
+.contact {
+  margin: 1rem;
+}
+
+.text-content h1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.contact-detail-list {
+  padding-left: 2.5rem;
+}
+
+
+

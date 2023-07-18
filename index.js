@@ -1,48 +1,22 @@
-import currentTime from './modules/JS/books/date.js';
-import { addBook, removeBook } from './modules/JS/books/managing-books.js';
-
+import currentTime from './modules/date.js';
+import { addBook, removeBook } from './modules/managing-books.js';
+import { pages } from './modules/pages.js';
 const pageLinks = document.querySelectorAll('.link-page');
 const sections = document.querySelectorAll('section');
 
-// Hide all sections except the first on page load
-const pages = () => {
-  sections.forEach((section, index) => {
-    if (index !== 0) {
-      section.style.display = 'none';
-    }
-  });
+// Managing books
+addBook();
+removeBook();
 
-  // Add a click event to each page link
-  pageLinks.forEach((link, index) => {
-    link.addEventListener('click', (event) => {
-      event.preventDefault();
+// pages
 
-      // Show the corresponding section and hide the others
-      sections.forEach((section, sectionIndex) => {
-        if (sectionIndex === index) {
-          section.style.display = 'block';
-        } else {
-          section.style.display = 'none';
-        }
-      });
-    });
-  });
-};
+pages(sections,pageLinks);
 
+// Date
 const dateTime = () => {
   const formatedTime = currentTime.toFormat("MMMM d yyyy',' hh:mm:ss a");
 
   const elementTime = document.getElementById('current-date');
   elementTime.innerText = formatedTime;
 };
-
-// Managing books
-addBook();
-removeBook();
-
-//  pages
-
-pages();
-
-// Date
 dateTime();
