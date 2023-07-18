@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Awesome-Books</title>
+    <script type="module" src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Awesome Books</h1>
+        <nav>
+            <ul class="page-list">
+                <li><a class="link-page" href="">Book List</a></li>
+                <li><a class="link-page" href="">Add Books</a></li>
+                <li><a class="link-page" href="">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <p class="date" id="current-date"></p>
+
+        <section class="books">
+            <h2 class="list-title">All awesome books</h2>
+            <ul class="book-list">
+            </ul>
+        </section>
+
+        <section class="add-book">
+            <h2>Add Books</h2>
+            <form class="add-form">
+                <input type="text" placeholder="Title" id="title" class="title-input" required>
+                <input type="text" placeholder="Author" id="author" class="author-input" required>
+                <button class="add-btn" type="submit">Add Book</button>
+            </form>
+        </section>
+
+        <section class="contact">
+            <div class="text-content">
+                <h1>Contact Information</h1>
+                <p>Do you have any information or you just want to say 'Hello'<br>You can reach out to us.</p>
+                <ul class="contact-detail-list">
+                  <li class="contact-detail-item">Our email: mail@mail.com</li>
+                  <li class="contact-detail-item">Our Phone Number: 001234567890</li>
+                  <li class="contact-detail-item">Our Address: 234 Main Street, New City, Best Country</li>
+                </ul>
+              </div>
+        </section>
+
+        
+    </main>
+    
+</body>
+</html>

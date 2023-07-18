@@ -1,0 +1,13 @@
+.contact {
+  margin: 1rem;
+}
+
+.text-content h1 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.contact-detail-list {
+  padding-left: 2.5rem;
+}

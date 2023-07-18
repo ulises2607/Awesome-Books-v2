@@ -1,0 +1,10 @@
+@import url('modules/Styles/config.css');
+@import url('modules/Styles/header.css');
+@import url('modules/Styles/book-list.css');
+@import url('modules/Styles/add-book.css');
+@import url('modules/Styles/contact.css');
+
+.date {
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,0 +1,23 @@
+.add-book {
+  margin: 1rem;
+  padding: 1rem 4rem 1rem 4rem;
+}
+
+.add-book h2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.add-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.add-btn {
+  display: flex;
+  justify-content: center;
+  width: 5rem;
+  align-self: flex-end;
+}

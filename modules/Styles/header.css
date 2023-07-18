@@ -1,0 +1,23 @@
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+.page-list {
+  display: flex;
+  gap: 2rem;
+}
+
+.page-list a {
+  color: black;
+}
+
+.page-list a:hover {
+  color: red;
+}
