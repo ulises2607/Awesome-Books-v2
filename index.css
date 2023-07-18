@@ -5,6 +5,6 @@
 @import url('modules/Styles/contact.css');
 
 .date {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
