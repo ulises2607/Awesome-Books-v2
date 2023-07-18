@@ -70,7 +70,7 @@ As well as knowing how to manipulate information but, more importantly, how to c
 
 ### Take a Look
 
-- [Live Demo Link](https://godedict.github.io/Awesome-books/)
+- [Live Demo Link](https://ulises2607.github.io/Awesome-Books-v2/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
